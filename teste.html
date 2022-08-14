@@ -1,17 +1,21 @@
 <html>
     <script>
 
-        
+        var primo = true
 
         function verificaNumeroPrimo (numero){
             
             for(var cont = 2; cont < numero; cont++){
                
                 if(numero % cont === 0){
-                   return false;
+                   primo = false;
                 } 
-                
-                
+            }
+
+            if(primo){
+                return "é primo"
+            } else {
+                return "não é primo"
             }
 
         }
