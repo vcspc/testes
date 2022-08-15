@@ -1,10 +1,10 @@
 <html>
     <script>
 
-        var primo = true
-
         function verificaNumeroPrimo (numero){
             
+            var primo = true;
+
             for(var cont = 2; cont < numero; cont++){
                
                 if(numero % cont === 0){
@@ -13,16 +13,12 @@
             }
 
             if(primo){
-                return "é primo";
+                return "O número " + numero + " é primo";
             } else {
-                return "não é primo";
+                return "O número " + numero + " não é primo";
             }
 
         }
 
-        // criar a função
-        // pegar o número
-        // verificar se o numero é divisivel por outros
-        // preciso dizer se é primo ou não
     </script>
 </html>
